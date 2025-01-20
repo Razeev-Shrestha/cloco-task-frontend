@@ -1,0 +1,51 @@
+{
+	"compilerOptions": {
+		"allowSyntheticDefaultImports": true,
+		"allowUmdGlobalAccess": false,
+		"allowUnreachableCode": false,
+		"allowUnusedLabels": false,
+		"alwaysStrict": true,
+		"allowJs": false,
+		"baseUrl": "./src",
+		"tsBuildInfoFile": ".tsbuildinfo",
+		"useUnknownInCatchVariables": true,
+		"exactOptionalPropertyTypes": true,
+		"forceConsistentCasingInFileNames": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"lib": ["DOM", "DOM.Iterable", "ESNext"],
+		"skipLibCheck": true,
+		"strict": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"module": "ESNext",
+		"moduleResolution": "Bundler",
+		"resolveJsonModule": true,
+		"incremental": true,
+		"plugins": [
+			{
+				"name": "next"
+			}
+		],
+		"paths": {
+			"@/*": ["*"]
+		},
+		"target": "ESNext",
+		"strictNullChecks": true,
+		"strictPropertyInitialization": true,
+		"noImplicitAny": true,
+		"noFallthroughCasesInSwitch": true,
+		"noImplicitReturns": true,
+		"types": ["node", "react", "react-dom", "bun-types"]
+	},
+	"include": [
+		"next-env.d.ts",
+		"src/shared/types/*.ts",
+		"./src/**/*",
+		"./src/*",
+		"**/*.ts",
+		"**/*.tsx",
+		".next/types/**/*.ts"
+	],
+	"exclude": ["node_modules"]
+}

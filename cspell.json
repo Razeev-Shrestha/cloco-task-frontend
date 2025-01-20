@@ -1,0 +1,52 @@
+{
+	"version": "0.2",
+	"language": "en-US",
+	"ignorePaths": [
+		"node_modules/**",
+		"dist/**",
+		"build/**",
+		".git/**",
+		".vscode/**",
+		".github/**",
+		"bun.lock",
+		".husky/**",
+		"biome.json",
+		"package.json",
+		".env/*",
+		"/src/shared/services/schema.ts",
+		".dockerignore",
+		"docker-compose.yml",
+		"Dockerfile.*"
+	],
+	"ignoreWords": [
+		"Filenaming",
+		"khaja",
+		"Noninteractive",
+		"Razeev",
+		"Shrestha",
+		"Tabindex",
+		"turbopack"
+	],
+	"languageSettings": [
+		{
+			"languageId": ["typescript", "html", "css"],
+			"locale": "*"
+		}
+	],
+	"words": [
+		"brocha",
+		"Cloco",
+		"codegen",
+		"daamikhaja",
+		"embla",
+		"INLINES",
+		"inview",
+		"Knlc",
+		"linejoin",
+		"MRNWOV",
+		"Neue",
+		"Noto",
+		"Qzqt",
+		"Segoe"
+	]
+}
