@@ -8,6 +8,7 @@ import { DataTable } from '@/shared/ui/data-table'
 import { ArtistActions } from './artist-actions'
 import { ArtistAdd } from './artist-add'
 import { CanI } from '@/shared/providers/permission-provider'
+import { ArtistCsv } from './artist-csv'
 
 export const ArtistDashboard = () => {
 	const { data } = useGetArtistsService()
@@ -50,7 +51,10 @@ export const ArtistDashboard = () => {
 			pagination={data?.pagination}
 			headerSection={
 				<CanI task='create'>
-					<ArtistAdd />
+					<div className='flex items-center gap-4'>
+						<ArtistCsv />
+						<ArtistAdd />
+					</div>
 				</CanI>
 			}
 		/>
