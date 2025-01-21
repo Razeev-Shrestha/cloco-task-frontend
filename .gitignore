@@ -1,0 +1,14 @@
+
+.env.local
+.env.staging
+.env.production
+
+node_modules
+
+build
+dist
+.next
+
+next-env.d.ts
+
+.tsbuildinfo

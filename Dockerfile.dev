@@ -1,0 +1,15 @@
+FROM oven/bun:latest
+
+WORKDIR /app
+
+ENV CI=true
+
+COPY package.json bun.lock ./
+
+RUN bun install
+
+COPY . .
+
+EXPOSE 3009
+
+CMD ["bun","--bun","run","dev"]

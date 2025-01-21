@@ -1,0 +1,5 @@
+exec git diff --cached --name-only | bunx cspell --no-summary --no-progress --no-must-find-files --file-list stdin
+
+bunx tsc --noEmit
+
+bun run lint-staged

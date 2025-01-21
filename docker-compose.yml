@@ -1,0 +1,22 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3009:3009"
+    develop:
+      watch:
+        - action: sync
+          path: ./src
+          target: /app/src
+          ignore:
+            - .git/
+            - .github/
+            - .husky/
+            - .vscode/
+            - node_modules/
+        - action: rebuild
+          path: package.json
+        - action: rebuild
+          path: .env.local
