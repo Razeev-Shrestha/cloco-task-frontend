@@ -29,7 +29,11 @@
 	],
 	"languageSettings": [
 		{
-			"languageId": ["typescript", "html", "css"],
+			"languageId": [
+				"typescript",
+				"html",
+				"css"
+			],
 			"locale": "*"
 		}
 	],
@@ -46,6 +50,7 @@
 		"MRNWOV",
 		"Neue",
 		"Noto",
+		"nums",
 		"Qzqt",
 		"Segoe"
 	]

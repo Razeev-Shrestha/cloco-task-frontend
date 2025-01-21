@@ -1,5 +1,7 @@
 import { fontRoboto } from '@/shared/configs/font'
+import { QueryProvider } from '@/shared/providers/query-provider'
 import '@/shared/styles/global.css'
+import { Toaster } from '@/shared/ui/toaster'
 import { cn } from '@/shared/utils/cva'
 import type { Metadata, Viewport } from 'next'
 
@@ -34,7 +36,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 					'font-roboto max-w-vw min-h-svh h-auto bg-background',
 					fontRoboto.variable
 				)}>
-				{children}
+				<QueryProvider>{children}</QueryProvider>
+				<Toaster />
 			</body>
 		</html>
 	)
